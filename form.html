@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Űrlap adatok kezelése</title>
+    <style>
+        .form-container
+        {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        table, th, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <fieldset>
+            <legend>Űrlap</legend>
+            <form action="" id="userForm">
+                <p>
+                    <label for="">Vezetéknév:</label>
+                    <input type="text" name="vezeteknev">
+                </p>
+                <p>
+                    <label for="">Keresztnév:</label>
+                    <input type="text" name="keresztnev">
+                </p>
+                <p>
+                    <label for="">Email:</label>
+                    <input type="text" name="email">
+                </p>
+                <p>
+                    <label for="">Telefonszám:</label>
+                    <input type="text" name="telefonszam">
+                </p>
+                <p>
+                    <button type="submit">Elküld</button>
+                </p>
+            </form>
+        </fieldset>
+        <p>
+            <h3>LocalStorage adatok megjelenítése</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vezetéknév</th>
+                        <th>Keresztnév</th>
+                        <th>Email cím</th>
+                        <th>Telefonszám</th>
+                    </tr>
+                </thead>
+                <tbody id="usersTable"><!--Ide jönnek az adatok--></tbody>
+            </table>
+        </p>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
